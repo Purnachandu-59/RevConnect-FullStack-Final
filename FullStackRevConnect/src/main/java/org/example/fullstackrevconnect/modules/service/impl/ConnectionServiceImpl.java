@@ -51,13 +51,13 @@ public class ConnectionServiceImpl implements ConnectionService {
         User sender = userRepository.findById(senderId)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
-//        notificationService.createNotification(
-//                receiverId,
-//                senderId,
-//                NotificationType.CONNECTION_REQUEST,
-//                sender.getUsername() + " sent you a connection request",
-//                String.valueOf(saved.getId())
-//        );
+        notificationService.createNotification(
+                receiverId,
+                senderId,
+                NotificationType.CONNECTION_REQUEST,
+                sender.getUsername() + " sent you a connection request",
+                String.valueOf(saved.getId())
+        );
 
         return saved;
     }
@@ -75,13 +75,13 @@ public class ConnectionServiceImpl implements ConnectionService {
         User receiver = userRepository.findById(connection.getReceiverId())
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
-//        notificationService.createNotification(
-//                connection.getSenderId(),
-//                connection.getReceiverId(),
-//                NotificationType.CONNECTION_ACCEPTED,
-//                receiver.getUsername() + " accepted your connection request",
-//                String.valueOf(saved.getId())
-//        );
+        notificationService.createNotification(
+                connection.getSenderId(),
+                connection.getReceiverId(),
+                NotificationType.CONNECTION_ACCEPTED,
+                receiver.getUsername() + " accepted your connection request",
+                String.valueOf(saved.getId())
+        );
 
         return saved;
     }
