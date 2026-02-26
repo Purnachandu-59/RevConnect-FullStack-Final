@@ -3,6 +3,7 @@ package org.example.fullstackrevconnect.modules.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.example.fullstackrevconnect.modules.dto.PostRequest;
 import org.example.fullstackrevconnect.modules.entity.*;
+import org.example.fullstackrevconnect.modules.entity.enums.NotificationType;
 import org.example.fullstackrevconnect.modules.repository.CommentRepository;
 import org.example.fullstackrevconnect.modules.repository.PostRepository;
 import org.example.fullstackrevconnect.modules.repository.PostViewRepository;
@@ -21,7 +22,7 @@ public class PostServiceImpl implements PostService {
     private final PostRepository postRepository;
     private final UserRepository userRepository;
     private final CommentRepository commentRepository;
-//    private final NotificationService notificationService;
+    private final NotificationService notificationService;
     private final PostViewRepository postViewRepository;
 
     @Override
@@ -93,13 +94,13 @@ public class PostServiceImpl implements PostService {
         } else {
             post.getLikedUsers().add(user);
 
-//            notificationService.createNotification(
-//                    post.getAuthorId(),
-//                    user.getId(),
-//                    NotificationType.LIKE,
-//                    user.getUsername() + " liked your post",
-//                    postId
-//            );
+            notificationService.createNotification(
+                    post.getAuthorId(),
+                    user.getId(),
+                    NotificationType.LIKE,
+                    user.getUsername() + " liked your post",
+                    postId
+            );
         }
 
         Post saved = postRepository.save(post);
@@ -129,13 +130,13 @@ public class PostServiceImpl implements PostService {
         Comment saved = commentRepository.save(comment);
         post.getComments().add(saved);
 
-//        notificationService.createNotification(
-//                post.getAuthorId(),
-//                user.getId(),
-//                NotificationType.COMMENT,
-//                user.getUsername() + " commented on your post",
-//                postId
-//        );
+        notificationService.createNotification(
+                post.getAuthorId(),
+                user.getId(),
+                NotificationType.COMMENT,
+                user.getUsername() + " commented on your post",
+                postId
+        );
 
         return saved;
     }
