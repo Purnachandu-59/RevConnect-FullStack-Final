@@ -221,10 +221,10 @@ public class JwtFilter extends OncePerRequestFilter {
 
                     if (jwtUtil.validateToken(token, userDetails)) {
 
-                        // 🔥 Extract role from JWT
+
                         String role = jwtUtil.extractRole(token);
 
-                        // 🔥 Convert role to Spring authority format
+
                         List<SimpleGrantedAuthority> authorities =
                                 List.of(new SimpleGrantedAuthority("ROLE_" + role));
 
