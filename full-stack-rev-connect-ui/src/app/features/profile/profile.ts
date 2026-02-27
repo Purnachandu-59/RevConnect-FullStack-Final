@@ -42,7 +42,7 @@ export class Profile implements OnInit {
 
   ngOnInit() {
 
-    // Always load connection state for button logic
+    
     this.connectionService.getMyConnections().subscribe(res => {
       this.connectedUserIds = res.map(u => u.userId);
     });
@@ -80,7 +80,7 @@ export class Profile implements OnInit {
     });
   }
 
-  // ===== POSTS =====
+  
 
   loadMyPosts() {
     this.postService.getMyPosts(this.page, 10)
@@ -92,7 +92,7 @@ export class Profile implements OnInit {
       .subscribe(res => this.posts = res.content);
   }
 
-  // ===== CONNECTIONS =====
+  
 
   loadMyConnections() {
     this.connectionService.getMyConnections()
@@ -104,7 +104,7 @@ export class Profile implements OnInit {
       .subscribe(data => this.connections = data);
   }
 
-  // ===== POST ACTIONS =====
+
 
   like(postId: string) {
     this.postService.toggleLike(postId).subscribe(updated => {
@@ -130,7 +130,7 @@ export class Profile implements OnInit {
       });
   }
 
-  // ===== PROFILE EDIT =====
+ 
 
   enableEdit() {
     if (this.viewingOtherUser) return;
@@ -151,7 +151,7 @@ export class Profile implements OnInit {
     this.editMode.set(false);
   }
 
-  // ===== CONNECTION BUTTON LOGIC =====
+  
 
   isConnected(userId: number): boolean {
     return this.connectedUserIds.includes(userId);

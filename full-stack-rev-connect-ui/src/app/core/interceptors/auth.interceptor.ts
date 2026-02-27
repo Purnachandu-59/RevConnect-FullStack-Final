@@ -26,7 +26,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
 
       console.error('HTTP Error:', error.status);
 
-      // 🔥 Remove token ONLY for 401
+      
       if (error.status === 401) {
         localStorage.removeItem('token');
       }

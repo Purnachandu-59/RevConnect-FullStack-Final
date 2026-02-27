@@ -13,16 +13,15 @@
   })
   export class Login implements OnInit {
 
-    // ================= FIELDS =================
     email = '';
     username = '';
     password = '';
-    // role: string | null = null;
+    
 role: string = '';
     securityQuestion = '';
     securityAnswer = '';
 
-    // ================= UI STATE =================
+    
     isRegisterMode = false;
     successMessage = '';
     errorMessage = '';
@@ -42,14 +41,14 @@ role: string = '';
       });
     }
 
-    // ================= TOGGLE =================
+   
     toggleMode() {
       this.isRegisterMode = !this.isRegisterMode;
 
       this.email = '';
       this.username = '';
       this.password = '';
-      // this.role = null;
+     
       this.role = '';
       this.securityQuestion = '';
       this.securityAnswer = '';
@@ -57,7 +56,7 @@ role: string = '';
       this.errorMessage = '';
     }
 
-    // ================= REGISTER =================
+   
     register() {
 
       if (!this.email || !this.username || !this.password ||
@@ -94,7 +93,7 @@ role: string = '';
       });
     }
 
-    // ================= LOGIN =================
+    
   login() {
 
     if (!this.username || !this.password) {
@@ -112,7 +111,7 @@ role: string = '';
 
       next: (res: any) => {
 
-        // Successful login
+       
         localStorage.setItem('token', res.token);
         localStorage.setItem('role', res.role);
         localStorage.setItem('loggedUser', this.username);
@@ -127,7 +126,7 @@ role: string = '';
     this.errorMessage =
       err?.error?.message || "Invalid username or password.";
 
-    this.cdr.detectChanges();   // 🔥 FORCE UI UPDATE
+    this.cdr.detectChanges();   
   }
     });
   }

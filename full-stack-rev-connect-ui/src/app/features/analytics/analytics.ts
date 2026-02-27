@@ -27,7 +27,7 @@ export class Analytics implements OnInit {
   isLoading = false;
   selectedDays = 30;
 
-  // Flags to control empty state
+  
   hasWeeklyData = false;
   hasFollowerData = false;
   hasReachData = false;
@@ -102,7 +102,7 @@ export class Analytics implements OnInit {
     });
   }
 
-  // Safe destroy
+  
   destroyChart(chart: Chart | undefined) {
     if (chart) {
       chart.destroy();

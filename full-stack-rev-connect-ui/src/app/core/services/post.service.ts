@@ -21,7 +21,7 @@ export interface Post {
   likes: number;
   createdAt: string;
 
-  likedByCurrentUser: boolean;  // 🔥 Needed for like toggle
+  likedByCurrentUser: boolean;  
 
   comments?: Comment[];
 }
@@ -40,19 +40,18 @@ export class PostService {
 
   constructor(private http: HttpClient) {}
 
-  // ✅ Get Feed
+  
   getFeed(page: number, size: number): Observable<FeedResponse> {
     return this.http.get<FeedResponse>(
       `${this.baseUrl}/feed?page=${page}&size=${size}`
     );
   }
 
-  // ✅ Create Post
+ 
   createPost(data: { content: string; imageUrl?: string }): Observable<Post> {
     return this.http.post<Post>(this.baseUrl, data);
   }
 
-  // ✅ Toggle Like (Add / Remove)
   toggleLike(postId: string): Observable<Post> {
     return this.http.post<Post>(
       `${this.baseUrl}/${postId}/like`,
@@ -60,7 +59,7 @@ export class PostService {
     );
   }
 
-  // ✅ Add Comment
+  
   addComment(postId: string, content: string): Observable<Comment> {
     return this.http.post<Comment>(
       `${this.baseUrl}/${postId}/comment`,
@@ -68,14 +67,14 @@ export class PostService {
     );
   }
 
-  // ✅ Get Comments
+  
   getComments(postId: string): Observable<Comment[]> {
     return this.http.get<Comment[]>(
       `${this.baseUrl}/${postId}/comments`
     );
   }
 
-  // ✅ Delete Post
+ 
   deletePost(postId: string): Observable<void> {
     return this.http.delete<void>(
       `${this.baseUrl}/${postId}`

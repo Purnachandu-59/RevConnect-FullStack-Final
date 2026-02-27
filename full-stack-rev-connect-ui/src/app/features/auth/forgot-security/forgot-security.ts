@@ -7,7 +7,7 @@ import { AuthService } from '../../../core/services/auth.services';
 @Component({
   selector: 'app-forgot-security',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterModule], // 🔥 ADD RouterModule
+  imports: [FormsModule, CommonModule, RouterModule], 
   templateUrl: './forgot-security.html',
   styleUrls: ['./forgot-security.css']
 })
@@ -46,7 +46,7 @@ export class ForgotSecurity {
         console.log("Received question:", res);
 
         this.securityQuestion = res;
-        this.step = 2;   // 🔥 THIS WILL NOW WORK
+        this.step = 2;   
 
       },
      error: (err) => {
@@ -85,9 +85,9 @@ export class ForgotSecurity {
       console.log("Reset Success:", res);
 
       this.error = '';
-      this.message = res; // 🔥 show backend message
+      this.message = res; 
 
-      // 🔥 Redirect after 2 seconds
+    
     setTimeout(() => {
   this.router.navigate(['/'], {
     queryParams: { reset: 'success' }
@@ -100,7 +100,7 @@ export class ForgotSecurity {
 
   this.error = err?.error?.message || "Incorrect security answer.";
 
-  this.cdr.detectChanges();   // 🔥 FORCE UI UPDATE
+  this.cdr.detectChanges();  
 }
   });
 }

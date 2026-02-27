@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-/* ===========================
-   🔹 Raw Connection Entity
-=========================== */
+
+
 export interface Connection {
   id: number;
   senderId: number;
@@ -12,9 +11,7 @@ export interface Connection {
   status: 'PENDING' | 'ACCEPTED' | 'REJECTED';
 }
 
-/* ===========================
-   🔹 Pending Request DTO
-=========================== */
+
 export interface PendingRequest {
   connectionId: number;
   senderId: number;
@@ -22,9 +19,7 @@ export interface PendingRequest {
   senderProfileImage: string;
 }
 
-/* ===========================
-   🔹 Connected User DTO
-=========================== */
+
 export interface ConnectionUser {
   userId: number;
   username: string;
@@ -41,35 +36,34 @@ export class ConnectionService {
 
   constructor(private http: HttpClient) {}
 
-  /* 🔹 Send Request */
+
   sendRequest(receiverId: number): Observable<Connection> {
     return this.http.post<Connection>(
       `${this.baseUrl}/request/${receiverId}`, {}
     );
   }
 
-  /* 🔹 Accept Request */
   acceptRequest(connectionId: number): Observable<Connection> {
     return this.http.put<Connection>(
       `${this.baseUrl}/accept/${connectionId}`, {}
     );
   }
 
-  /* 🔹 Reject Request */
+
   rejectRequest(connectionId: number): Observable<void> {
     return this.http.put<void>(
       `${this.baseUrl}/reject/${connectionId}`, {}
     );
   }
 
-  /* 🔹 Get Pending Requests */
+  
   getPending(): Observable<PendingRequest[]> {
     return this.http.get<PendingRequest[]>(
       `${this.baseUrl}/pending`
     );
   }
 
-  /* 🔹 Get Connected Users */
+ 
   getMyConnections(): Observable<ConnectionUser[]> {
     return this.http.get<ConnectionUser[]>(
       `${this.baseUrl}/my`

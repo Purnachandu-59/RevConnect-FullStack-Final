@@ -1,4 +1,4 @@
-/* ============ GLOBAL ============ */
+
 
 html, body {
   margin: 0;
@@ -9,7 +9,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* ============ WRAPPER ============ */
+
 
 .dashboard-wrapper {
   display: flex;
@@ -26,7 +26,7 @@ html, body {
   padding: 20px;
 }
 
-/* ============ CARD SYSTEM ============ */
+
 
 .card {
   background: #fff;
@@ -40,7 +40,7 @@ html, body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* ============ SIDEBAR ============ */
+
 
 .sidebar,
 .right-panel {
@@ -49,7 +49,6 @@ html, body {
   align-self: start;
 }
 
-/* Profile */
 
 .profile-cover {
   height: 90px;
@@ -87,7 +86,7 @@ html, body {
   color: #6b7280;
 }
 
-/* Menu */
+
 
 .menu-item {
   display: flex;
@@ -120,7 +119,7 @@ html, body {
   border-radius: 2px;
 }
 
-/* ============ CREATE POST ============ */
+
 
 .create-post {
   margin-bottom: 20px;
@@ -176,7 +175,6 @@ html, body {
   transform: translateY(-1px);
 }
 
-/* ============ POST ANIMATION ============ */
 
 .post-animate {
   animation: fadeInUp 0.4s ease;
@@ -193,7 +191,7 @@ html, body {
   }
 }
 
-/* ============ SKELETON LOADER ============ */
+
 
 .skeleton-card {
   height: 120px;
@@ -214,7 +212,7 @@ html, body {
   100% { background-position: -100% 0; }
 }
 
-/* ============ RIGHT PANEL ============ */
+
 
 .trend-item {
   margin-top: 8px;
@@ -255,7 +253,7 @@ html, body {
   color: white;
 }
 
-/* ============ RESPONSIVE ============ */
+
 
 @media (max-width: 1024px) {
   .dashboard-container {

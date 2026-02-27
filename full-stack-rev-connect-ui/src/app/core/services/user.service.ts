@@ -16,12 +16,12 @@ export class UserService {
 
   private http = inject(HttpClient);
 
-  // ✅ Base API (no duplication problem anymore)
+  
   private baseUrl = 'http://localhost:8080/api';
 
   user = signal<User | null>(null);
 
-  // ================= USER =================
+  // USER 
 
   loadUser() {
     this.http.get<User>(`${this.baseUrl}/users/me`)
@@ -39,7 +39,7 @@ export class UserService {
     return this.http.get<User>(`${this.baseUrl}/users/${id}`);
   }
 
-  // ================= SEARCH (FIXED) =================
+  
 
   searchUsers(query: string) {
     return this.http.get<User[]>(
@@ -47,13 +47,13 @@ export class UserService {
     );
   }
 
-  // ================= DISCOVER =================
+
 
   discoverUsers() {
     return this.http.get<User[]>(`${this.baseUrl}/users/discover`);
   }
 
-  // ================= CONNECTIONS =================
+  
 
   sendRequest(receiverId: number) {
     return this.http.post(

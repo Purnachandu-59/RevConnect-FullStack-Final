@@ -44,8 +44,5 @@ export class AnalyticsService {
     return this.http.get<FollowerGrowthDTO[]>(`${this.BASE_URL}/follower-growth`, { params });
   }
 
-  // getDemographics(days: number): Observable<DemographicsDTO> {
-  //   const params = new HttpParams().set('days', days);
-  //   return this.http.get<DemographicsDTO>(`${this.BASE_URL}/demographics`, { params });
-  // }
+  
 }

@@ -5,7 +5,7 @@
   <h2>My Network</h2>
   <p class="subtitle">Manage your connections and discover new people</p>
 
-  <!-- ================= STATS CARDS ================= -->
+ 
   <div class="stats-grid">
     <div class="stat-card blue">
       <h3>{{ connections.length }}</h3>
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <!-- ================= TABS ================= -->
+
   <div class="tabs">
 
     <div (click)="setTab('connections')"
@@ -58,7 +58,7 @@
 
   </div>
 
-  <!-- ================= CONNECTIONS ================= -->
+  
   <div *ngIf="activeTab==='connections'">
 
     <div *ngIf="connections.length === 0">
@@ -80,7 +80,7 @@
 
   </div>
 
-  <!-- ================= FOLLOWERS ================= -->
+ 
   <div *ngIf="activeTab==='followers'">
 
     <div *ngIf="connections.length === 0">
@@ -102,7 +102,7 @@
 
   </div>
 
-  <!-- ================= FOLLOWING ================= -->
+ 
   <div *ngIf="activeTab==='following'">
 
     <div *ngIf="connections.length === 0">
@@ -124,7 +124,7 @@
 
   </div>
 
-  <!-- ================= PENDING ================= -->
+ 
   <div *ngIf="activeTab==='pending'">
 
     <div *ngIf="pending.length === 0">
@@ -154,7 +154,7 @@
 
   </div>
 
-  <!-- ================= DISCOVER ================= -->
+ 
   <div *ngIf="activeTab==='discover'">
 
     <div *ngIf="discoverUsers.length === 0">

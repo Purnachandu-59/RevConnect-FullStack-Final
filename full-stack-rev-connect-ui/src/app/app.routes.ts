@@ -9,10 +9,10 @@ export const routes: Routes = [
 
   { path: 'dashboard', component: Dashboard },
 
-  // 🔥 IMPORTANT — param route must come FIRST
+ 
   { path: 'profile/:id', component: Profile },
 
-  // 🔥 My profile
+  
   { path: 'profile', component: Profile },
 
   {

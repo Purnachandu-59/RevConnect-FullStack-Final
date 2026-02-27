@@ -11,7 +11,7 @@
   box-shadow: 0 20px 60px rgba(0,0,0,0.1);
 }
 
-/* HEADER */
+
 .post-header {
   display: flex;
   gap: 12px;
@@ -34,7 +34,7 @@
   font-size: 12px;
 }
 
-/* HEADER LAYOUT FIX */
+
 .post-header {
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
   flex: 1;
 }
 
-/* MENU */
+
 .menu-wrapper {
   position: relative;
 }
@@ -90,7 +90,7 @@
   color: #dc2626;
 }
 
-/* CONTENT */
+
 .post-content {
   margin: 15px 0;
   font-size: 15px;
@@ -98,7 +98,6 @@
   color: #1e293b;
 }
 
-/* IMAGE */
 .post-image {
   width: 100%;
   max-height: 500px;
@@ -107,7 +106,7 @@
   margin-top: 10px;
 }
 
-/* ACTIONS */
+
 .post-actions {
   display: flex;
   gap: 14px;
@@ -141,7 +140,7 @@
   color: #2563eb;
 }
 
-/* COMMENTS SECTION */
+
 .comments-section {
   margin-top: 18px;
   border-top: 1px solid #e5e7eb;
@@ -149,7 +148,6 @@
   animation: fadeIn 0.25s ease;
 }
 
-/* SINGLE COMMENT */
 .comment {
   display: flex;
   gap: 10px;
@@ -181,7 +179,7 @@
   font-size: 14px;
 }
 
-/* ADD COMMENT CONTAINER */
+
 .add-comment {
   display: flex;
   gap: 10px;
@@ -189,7 +187,7 @@
   margin-top: 12px;
 }
 
-/* INPUT */
+
 .add-comment input {
   flex: 1;
   padding: 10px 16px;
@@ -206,7 +204,7 @@
   background: white;
 }
 
-/* SEND BUTTON */
+
 .send-btn {
   padding: 8px 18px;
   border-radius: 999px;
@@ -229,8 +227,6 @@
   cursor: not-allowed;
   transform: none;
 }
-
-/* Smooth dropdown animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

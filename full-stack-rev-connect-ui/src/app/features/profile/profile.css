@@ -1,30 +1,28 @@
 .profile-page {
   max-width: 1100px;
-  margin: 20px auto;   /* reduced from 50px */
+  margin: 20px auto;   
   padding: 0 20px;
 }
 
-/* HEADER CARD */
+
 
 .profile-header-card {
   background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
-  position: relative;   /* VERY IMPORTANT */
+  position: relative;  
   box-shadow: 0 15px 40px rgba(0,0,0,0.05);
 }
 
-/* COVER */
 
-/* ===== PROFESSIONAL LINKEDIN STYLE COVER ===== */
 
 .profile-cover {
-  height: 220px;   /* smaller height */
+  height: 220px;   
   position: relative;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
 
-  /* LIGHT overlay (not heavy purple) */
+
   background:
     linear-gradient(
       rgba(37, 99, 235, 0.55),
@@ -39,7 +37,7 @@
   color: white;
 }
 
-/* Cover text */
+
 
 .cover-content h1 {
   font-size: 32px;
@@ -54,14 +52,14 @@
   opacity: 0.95;
 }
 
-/* ===== AVATAR POSITION FIX ===== */
+
 
 .profile-avatar {
   position: absolute;
 
   left: 60px;
 
-  /* USE TOP instead of bottom */
+ 
   top: 240px;
 
   width: 120px;
@@ -75,7 +73,7 @@
 }
 
 
-/* Adjust body padding */
+
 
 .profile-body {
   padding: 90px 50px 50px 50px;
@@ -106,7 +104,7 @@
   max-width: 600px;
 }
 
-/* STATS */
+
 
 .profile-stats {
   display: flex;
@@ -124,7 +122,7 @@
   color: #6b7280;
 }
 
-/* BUTTONS */
+
 
 .btn-primary {
   background: #2563eb;
@@ -149,7 +147,7 @@
   cursor: pointer;
 }
 
-/* EDIT */
+
 
 .profile-edit {
   margin-top: 20px;
@@ -197,7 +195,7 @@
   gap: 15px;
 }
 
-/* TABS */
+
 
 .profile-tabs {
   display: flex;
@@ -229,7 +227,7 @@
   border-radius: 4px;
 }
 
-/* TAB CONTENT */
+
 
 .profile-tab-content {
   margin-top: 30px;

@@ -72,9 +72,7 @@ private trendingSubscription!: Subscription;
     this.startTrendingRotation();
   }
 
-  // =============================
-  // FEED
-  // =============================
+  
 
 
   loadFeed() {
@@ -94,9 +92,7 @@ private trendingSubscription!: Subscription;
       });
   }
 
-  // =============================
-  // CONNECTIONS
-  // =============================
+  
 
   loadConnections() {
     this.connectionService.getMyConnections()
@@ -105,9 +101,7 @@ private trendingSubscription!: Subscription;
       });
   }
 
-  // =============================
-  // SUGGESTIONS
-  // =============================
+
 
   loadSuggestions() {
 
@@ -149,9 +143,7 @@ private trendingSubscription!: Subscription;
     });
   }
 
-  // =============================
-  // POST CREATION
-  // =============================
+ 
 
   onImageSelected(event: any) {
     const file = event.target.files[0];
@@ -199,9 +191,7 @@ private trendingSubscription!: Subscription;
     }
   }
 
-  // =============================
-  // POST ACTIONS
-  // =============================
+ 
 
   like(postId: string) {
     const index = this.posts.findIndex(p => p.id === postId);
@@ -274,7 +264,7 @@ isBusiness(): boolean {
 
 }
 
-//madu
+
 goToCreatorAnalytics() {
 
   this.router.navigate(['/analytics']);

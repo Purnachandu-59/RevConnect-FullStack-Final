@@ -31,7 +31,7 @@ export class Navbar implements OnInit, OnDestroy {
   userService = inject(UserService);
   notificationService = inject(NotificationService);
 
-   // ================= ROLE =================
+  
 
  
 
@@ -41,7 +41,7 @@ export class Navbar implements OnInit, OnDestroy {
 
   isBusiness = signal(false);
 
-  // ================= STATE =================
+ 
 
   darkMode = signal(false);
   notifications = signal(0);
@@ -54,7 +54,7 @@ export class Navbar implements OnInit, OnDestroy {
 
   private pollingSub?: Subscription;
 
-  // ================= SEARCH =================
+  
 
   searchTerm = '';
   searchResults: any[] = [];
@@ -83,7 +83,7 @@ export class Navbar implements OnInit, OnDestroy {
 
   ngOnInit(): void {
 
-        // 🔥 LOAD ROLE PROPERLY
+    
 
     const storedRole = localStorage.getItem('role');
 
@@ -93,7 +93,7 @@ export class Navbar implements OnInit, OnDestroy {
     this.isBusiness.set(storedRole === 'BUSINESS');
     this.loadNotifications();
 
-    // 🔥 Auto Polling Every 5 Seconds
+  
     this.pollingSub = interval(5000).subscribe(() => {
       this.loadNotifications();
     });
@@ -111,7 +111,7 @@ export class Navbar implements OnInit, OnDestroy {
   return false;
 }
 
-  // ================= NOTIFICATIONS =================
+ 
 
   loadNotifications() {
     this.notificationService.getNotifications()
@@ -146,7 +146,7 @@ export class Navbar implements OnInit, OnDestroy {
 
     this.showNotif = false;
 
-    // 🔥 Redirect Based on Type
+    
     if (notification.type === 'LIKE' || notification.type === 'COMMENT') {
       this.router.navigate(['/dashboard']);
     }
@@ -157,7 +157,7 @@ export class Navbar implements OnInit, OnDestroy {
     }
   }
 
-  // ================= SEARCH =================
+  
 
   onSearchChange(value: string) {
     if (!value.trim()) {
@@ -174,14 +174,14 @@ export class Navbar implements OnInit, OnDestroy {
     this.searchTerm = '';
   }
 
-  // ================= THEME =================
+  
 
   toggleDarkMode() {
     this.darkMode.update(v => !v);
     document.body.classList.toggle('dark');
   }
 
-  // ================= PROFILE =================
+ 
 
   goToProfile() {
     this.router.navigate(['/profile']);
@@ -198,14 +198,13 @@ export class Navbar implements OnInit, OnDestroy {
     this.router.navigate(['/']);
   }
 
-  // ================= SCROLL =================
 
   @HostListener('window:scroll')
   onScroll() {
     this.isScrolled = window.scrollY > 10;
   }
 
-  // ================= CLICK OUTSIDE =================
+ 
 
   @HostListener('document:click', ['$event'])
   handleClickOutside(event: Event) {

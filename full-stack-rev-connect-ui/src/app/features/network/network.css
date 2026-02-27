@@ -10,7 +10,7 @@
   font-size: 14px;
 }
 
-/* ================= STATS GRID ================= */
+
 
 .stats-grid {
   display: grid;
@@ -44,7 +44,7 @@
   opacity: 0.9;
 }
 
-/* Gradients */
+
 .blue {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
 }
@@ -61,7 +61,7 @@
   background: linear-gradient(135deg, #f59e0b, #d97706);
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -73,7 +73,7 @@
     grid-template-columns: 1fr;
   }
 }
-/* ================= TABS ================= */
+
 
 .tabs {
   display: flex;
@@ -100,7 +100,7 @@
   color: #2563eb;
 }
 
-/* ================= USER CARD ================= */
+
 
 .user-card {
   display: flex;
@@ -142,7 +142,7 @@
   font-size: 13px;
 }
 
-/* ================= ACTIONS WRAPPER ================= */
+
 
 .actions {
   display: flex;
@@ -150,19 +150,19 @@
   margin-left: auto;
 }
 
-/* ================= BUTTON BASE ================= */
+
 
 .user-card button {
-  padding: 5px 14px;          /* 🔥 reduced size */
+  padding: 5px 14px;         
   border-radius: 20px;
-  font-size: 12px;            /* 🔥 smaller text */
+  font-size: 12px;           
   font-weight: 500;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-/* 🔵 CONNECT */
+
 .user-card button:not(.connected-btn):not(.pending-btn):not(.reject-btn) {
   background: #2563eb;
   color: white;
@@ -173,7 +173,7 @@
   transform: scale(1.05);
 }
 
-/* 🟢 CONNECTED */
+
 .connected-btn {
   background: #16a34a;
   color: white;
@@ -184,14 +184,14 @@
   background: #15803d;
 }
 
-/* ⚪ REQUEST SENT */
+
 .pending-btn {
   background: #e5e7eb;
   color: #374151;
   cursor: not-allowed;
 }
 
-/* 🟢 ACCEPT */
+
 .actions button:first-child {
   background: #16a34a;
   color: white;
@@ -201,7 +201,7 @@
   background: #15803d;
 }
 
-/* 🔴 REJECT */
+
 .reject-btn {
   background: #fee2e2;
   color: #b91c1c;
@@ -211,12 +211,12 @@
   background: #fecaca;
 }
 
-/* Disabled subtle fade */
+
 .user-card button:disabled {
   opacity: 0.9;
 }
 
-/* ================= RESPONSIVE ================= */
+
 
 @media (max-width: 768px) {
   .user-card {

@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -10,7 +10,7 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* ================= BACKGROUND ================= */
+
 .login-wrapper {
   min-height: 100vh;
   width: 100%;
@@ -23,7 +23,7 @@ html, body {
   overflow: hidden;
 }
 
-/* Overlay */
+
 .login-wrapper::before {
   content: "";
   position: absolute;
@@ -35,7 +35,7 @@ html, body {
   );
 }
 
-/* ================= CARD ================= */
+
 .login-card {
   position: relative;
   z-index: 2;
@@ -50,7 +50,7 @@ html, body {
   animation: fadeIn 0.8s ease;
 }
 
-/* ================= LEFT SIDE ================= */
+
 .left {
   flex: 1;
   padding: 60px;
@@ -70,7 +70,7 @@ html, body {
   opacity: 0.9;
 }
 
-/* ================= RIGHT SIDE ================= */
+
 .right {
   flex: 1;
   background: white;
@@ -86,7 +86,6 @@ html, body {
   color: #222;
 }
 
-/* ================= FORM ================= */
 form {
   display: flex;
   flex-direction: column;
@@ -118,7 +117,7 @@ select:focus {
   box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
 } */
 
-/* ================= SELECT ================= */
+
 select {
   width: 100%;
   padding: 14px;
@@ -128,13 +127,13 @@ select {
   font-size: 14px;
   transition: 0.3s ease;
   background-color: white;
-  color: #666;                 /* softer grey like inputs */
+  color: #666;                 
 
 }
 
-/* When user selects real value */
+
 select:valid {
-  color: #222;                 /* normal dark text after selection */
+  color: #222;                 
 }
 
 select:focus {
@@ -149,7 +148,7 @@ input:focus {
   box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
 }
 
-/* ================= BUTTON ================= */
+
 button {
   padding: 14px;
   border: none;
@@ -166,7 +165,7 @@ button:hover {
   box-shadow: 0 10px 20px rgba(124, 58, 237, 0.4);
 }
 
-/* ================= SUCCESS / ERROR ================= */
+
 .success {
   background: rgba(16, 185, 129, 0.15);
   color: #10b981;
@@ -187,7 +186,7 @@ button:hover {
   animation: slideDown 0.3s ease;
 }
 
-/* ================= SWITCH TEXT ================= */
+
 .switch {
   margin-top: 20px;
   font-size: 14px;
@@ -200,7 +199,7 @@ button:hover {
   margin-left: 5px;
 }
 
-/* ================= ANIMATIONS ================= */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -223,7 +222,7 @@ button:hover {
   }
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media (max-width: 900px) {
   .login-card {
     flex-direction: column;
@@ -237,12 +236,12 @@ button:hover {
   .right {
     padding: 40px;
   }
-  /* Placeholder color for select */
+ 
 .placeholder-select {
   color: #888;
 }
 
-/* Normal selected value */
+
 select {
   color: #222;
 }
