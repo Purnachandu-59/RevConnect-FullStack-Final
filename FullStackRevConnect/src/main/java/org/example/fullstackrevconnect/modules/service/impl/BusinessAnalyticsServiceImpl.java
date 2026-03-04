@@ -1,6 +1,7 @@
 package org.example.fullstackrevconnect.modules.service.impl;
 
 import org.example.fullstackrevconnect.modules.dto.BusinessAnalyticsDTO;
+import org.example.fullstackrevconnect.modules.entity.Connection;
 import org.example.fullstackrevconnect.modules.entity.Post;
 import org.example.fullstackrevconnect.modules.entity.ProfileView;
 import org.example.fullstackrevconnect.modules.repository.ConnectionRepository;
