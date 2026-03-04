@@ -2169,3 +2169,426 @@ java.lang.NullPointerException: Cannot read field "generatedClass" because "data
 2026-03-04 22:55:17 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
 2026-03-04 22:55:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-03-04 22:55:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-04 22:55:22 [restartedMain] INFO  o.e.f.FullStackRevConnectApplication - Starting FullStackRevConnectApplication using Java 17.0.11 with PID 16260 (D:\Revconnect Fullstack\RevConnect-FullStack-Final\FullStackRevConnect\target\classes started by mouni in D:\Revconnect Fullstack\RevConnect-FullStack-Final\FullStackRevConnect)
+2026-03-04 22:55:22 [restartedMain] INFO  o.e.f.FullStackRevConnectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-04 22:55:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-04 22:55:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-04 22:55:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-04 22:55:24 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-04 22:55:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-04 22:55:25 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b14050b
+2026-03-04 22:55:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-04 22:55:25 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-04 22:55:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-04 22:55:30 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b53faf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365f6fb6, org.springframework.security.web.context.SecurityContextHolderFilter@49c0acea, org.springframework.security.web.header.HeaderWriterFilter@34e4b25f, org.springframework.web.filter.CorsFilter@d8b56b6, org.springframework.security.web.authentication.logout.LogoutFilter@6b52c5b, org.example.fullstackrevconnect.common.security.JwtFilter@5a429c33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76e64635, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32d112cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@521dc1ee, org.springframework.security.web.access.ExceptionTranslationFilter@28130658, org.springframework.security.web.access.intercept.AuthorizationFilter@63ab188b]
+2026-03-04 22:55:31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-04 22:55:31 [restartedMain] INFO  o.e.f.FullStackRevConnectApplication - Started FullStackRevConnectApplication in 9.913 seconds (process running for 10.781)
+2026-03-04 22:55:32 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-04 22:55:32 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:55:32 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:55:32 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:55:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:55:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:55:32 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@21fa4a15
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@7eb7a1bc
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:55:37 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:55:37 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:55:37 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:55:37 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@5355c68b
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@15c3162b
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:37 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:55:37 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:55:49 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:55:49 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:55:49 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:55:49 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:55:49 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:55:49 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@75a8f204
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@777c4dda
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:49 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:55:57 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:55:57 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:55:57 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:55:57 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:55:57 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:55:57 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@4a987a0d
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@58eee133
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:55:57 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:01 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:01 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:01 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:01 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@67001db8
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@79eef1d
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:01 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:06 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:56:06 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:56:06 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:06 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:06 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:06 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@353d2b0b
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@f0cff1d
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:06 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:11 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:11 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:11 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:11 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@309f908b
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@3d4d372b
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:11 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:11 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:56:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:56:17 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:17 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:17 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:17 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@3eec0a29
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@62321749
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:17 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:22 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:22 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:22 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:22 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@1ea5863a
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@78ce857b
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:22 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:22 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:27 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:56:27 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:56:27 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:27 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:27 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:27 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@65ef5768
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@28ac982e
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:27 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:32 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:32 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@24ec0b14
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@bf9dd27
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:32 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:37 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:56:37 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:56:37 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:37 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:37 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:37 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@35cdf5b1
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@48a1deb6
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:37 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:37 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:42 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:42 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:42 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:42 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@3eb0dd39
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@ce4bbfa
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:42 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:47 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:56:47 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:56:47 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:47 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:47 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:47 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@69aec259
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@36a346b7
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-4] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:47 [http-nio-8080-exec-3] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:52 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:52 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:52 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:52 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@76b45eb5
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@45ad600e
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:52 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:56:52 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:57 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:56:57 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:56:57 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:56:57 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:56:57 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:56:57 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@10820dc3
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@242daf9e
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-6] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:56:57 [http-nio-8080-exec-9] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:57:01 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:57:01 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:57:01 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:57:01 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@68b9a05b
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@4ce60539
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:57:01 [http-nio-8080-exec-1] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:57:01 [http-nio-8080-exec-2] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:57:06 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications
+2026-03-04 22:57:06 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/notifications/unread-count
+2026-03-04 22:57:06 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:57:06 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:57:06 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:57:06 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@3b917774
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@4010fbd7
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-10] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:57:06 [http-nio-8080-exec-5] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:57:11 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread-count
+2026-03-04 22:57:11 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications
+2026-03-04 22:57:11 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications
+2026-03-04 22:57:11 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread-count
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Entering method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Argument: Venky
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@3d03b4ec
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: UserServiceImpl.getUserByUsername(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Return value: org.example.fullstackrevconnect.modules.entity.User@4840ba05
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Entering method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Argument: 1
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUserNotifications(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-8] INFO  o.e.f.common.aop.LoggingAspect - Return value: []
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Exiting method: NotificationServiceImpl.getUnreadCount(..)
+2026-03-04 22:57:11 [http-nio-8080-exec-7] INFO  o.e.f.common.aop.LoggingAspect - Return value: 0
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/?continue to session
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?continue to session
+2026-03-04 22:57:16 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
