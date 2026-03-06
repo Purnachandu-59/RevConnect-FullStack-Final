@@ -1,5 +1,5 @@
 package org.example.fullstackrevconnect.service;
-
+import org.example.fullstackrevconnect.modules.entity.Connection;
 import org.example.fullstackrevconnect.modules.dto.*;
 import org.example.fullstackrevconnect.modules.entity.Post;
 import org.example.fullstackrevconnect.modules.repository.ConnectionRepository;
